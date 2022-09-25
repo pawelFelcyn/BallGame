@@ -22,7 +22,6 @@ public class Ball : MonoBehaviour
     }
     [field: SerializeField]
     public float MaxSpeed { get; set; }
-    public bool AllowUserStart { get; set; } = true;
     [field: SerializeField]
     public bool IsSpeedLimited { get; set; }
     

@@ -32,7 +32,6 @@ public class BallMultiplyingObstacle : Obstacle
     private void CreateNewBall(Ball originalBall)
     {
         var newBall = GameObject.Instantiate(originalBall);
-        newBall.AllowUserStart = false;
         newBall.transform.localScale *= NewBallScale;
         newBall.gameObject.AddComponent<DyingObject>();
         var dyingObject = newBall.GetComponent<DyingObject>();
