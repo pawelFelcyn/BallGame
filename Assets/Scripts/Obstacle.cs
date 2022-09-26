@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[Obstacle(ObstacleType.Neutral)]
 public class Obstacle : MonoBehaviour
 {
     private SpriteRenderer _meshRenderer;
@@ -63,4 +64,21 @@ public class Obstacle : MonoBehaviour
             _isMaterialOriginal = false;
         }
     }
+}
+
+public enum ObstacleType
+{
+    Helping, Neutral, Disturbing
+}
+
+
+[AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+public class ObstacleAttribute : Attribute
+{
+    public ObstacleAttribute(ObstacleType type)
+    {
+        Type = type;
+    }
+
+    public ObstacleType Type { get; set; }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Obstacle(ObstacleType.Helping)]
 public class BallMultiplyingObstacle : Obstacle
 {
     [field: SerializeField]
