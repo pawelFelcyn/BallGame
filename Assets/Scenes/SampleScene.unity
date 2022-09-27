@@ -935,6 +935,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1748768897}
   - component: {fileID: 1748768896}
+  - component: {fileID: 1748768899}
+  - component: {fileID: 1748768898}
   m_Layer: 0
   m_Name: FreeScripts
   m_TagString: Untagged
@@ -971,6 +973,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1748768898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748768895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d1bd78b9ab40a4782ff4dc6891431d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <SquareSprite>k__BackingField: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+--- !u!114 &1748768899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748768895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42b66d6fe88243642a2d902d877f8212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2040216655
 GameObject:
   m_ObjectHideFlags: 0

@@ -151,17 +151,3 @@ public class BallStarter : MonoBehaviour
     public event Action BallStarted;
     public event Action KickingCanceled;
 }
-
-public delegate void BallStartParamsChangedEvent(BallStartParamsChangedEventArgs args);
-
-public class BallStartParamsChangedEventArgs
-{
-    public BallStartParamsChangedEventArgs(float maxLength, Vector2 newDirection)
-    {
-        MaxLength = maxLength;
-        NewDirection = newDirection;
-    }
-
-    public float MaxLength { get; }
-    public Vector2 NewDirection { get; }
-}
